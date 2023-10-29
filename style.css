@@ -1,0 +1,92 @@
+body{
+    background-color: antiquewhite;
+}
+.container
+{
+    display: flex;
+    width: 40%;
+    height: auto;
+    margin: auto;
+    border: 5px solid antiquewhite;
+    border-radius: 3px;
+}
+.image
+{
+    border-radius: 5px;
+    flex: 1;
+}
+.image img
+{
+    width: 100%;
+    height: auto;
+}
+.desc_container
+{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+}
+.desc
+{
+    width: 90%;
+    height: 100%;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center   
+}
+.desc h2
+{
+    font-weight: 700;
+}
+
+.desc p
+{
+    color: #aeb1b8;
+    font-size: 20px;
+}
+#title
+{
+    font-size: 15px;
+    color: #aeb1b8;
+    margin-left: 2px;
+}
+#p1
+{
+    font-size: 30px;
+    font-weight: 700;
+    color: #3d8168;
+    margin-bottom: 5px;
+}
+#p2
+{
+    position: relative; /* Ensure the element has a non-static position */
+    z-index: 1; /* Position the content above the line */
+    font-size: 15px;
+    color: #aeb1b8;
+    margin-left: 1rem;
+}
+.btn
+{
+    font-size: 20px;
+    border: 2px solid ;
+    border-radius: 5px;
+    background-color: #3d8168;
+    width: 80%;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin-top: 1rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container
+    {
+        flex-direction: column;
+    }
+}
